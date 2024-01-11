@@ -21,6 +21,8 @@ export class AgeMiddleware implements NestMiddleware {
       return res
         .status(HttpStatus.FORBIDDEN)
         .json({ message: 'User age is below the required minimum' });
+
+        
     }
   }
 }
